@@ -81,11 +81,35 @@
           </li>
             </ul>
       </section>
-      <section class="hotel-search">
+      <section class="hotels-search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиницы в Седоне</p>
-        <button class="hotel-search-button" type="button">поиск гостиницы в седоне</button>
-        <!-- Здесь будет форма -->
+        <button class="hotels-search-button" type="button">Поиск гостиницы в Седоне</button>
+        <form class="search" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <p>
+              <label for="search-date-in"> Дата заезда:</label>
+              <input type="text" id="search-date-in" name="date-in" placeholder="24 апреля 2017">
+            </p>
+            <p>
+              <label for="search-date-out"> Дата выезда:</label>
+              <input type="text" id="search-date-out" name="date-out" placeholder="4 июля 2017">
+            </p>
+            <p>
+              <label for="search-adults-number">Взрослые:</label>
+              <button class="btn-minus" type="button" tabindex="-1"></button>
+              <input type="text" id="search-adults-number" name="adults" value="2">
+              <button class="btn-plus" type="button" tabindex="-1"></button>
+              <label for="search-children-number">Дети:</label>
+              <button class="btn-minus" type="button" tabindex="-1"></button>
+              <input type="text" id="search-children-number" name="children" value="0">
+              <button class="btn-plus" type="button" tabindex="-1"></button>
+            </p>
+            <p>
+              <input class="btn-find" type="submit" value="Найти">
+            </p>
+          </fieldset>
+        </form>
         <div class="map">
           <img src="img/index-map.jpg" width="1200" height="593" alt="Карта">
         </div>

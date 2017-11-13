@@ -30,20 +30,65 @@
 
       <h1 class="visually-hidden">Фильтрация и сортировка найденных гостиниц в городе «Седона»</h1>
 
-      <!-- Здесь будет форма -->
+      <section class="hotel-filter">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filer-infrastructure">
+              <legend class="filter-title">Инфраструктура:</legend>
+            <p>
+              <label for="filter-pool">Бассейн</label>
+              <input type="checkbox" id="filter-pool" name="pool" checked>
+            </p>
+            <p>
+              <label for="filter-parking">Парковка </label>
+              <input type="checkbox" id="filter-parking" name="parking">
+            </p>
+            <p>
+              <label for="filter-wifi">Wi-fi</label>
+              <input type="checkbox" id="filter-wifi" name="wifi">
+            </p>
+          </fieldset>
+          <fieldset class="filter-housing">
+            <legend class="filter-title">Тип жилья:</legend>
+            <p>
+              <label for="filter-hotel">Гостиница</label>
+              <input type="checkbox" id="filter-hotel" name="hotel" checked>
+            </p>
+            <p>
+              <label for="filter-motel">Мотель</label>
+              <input type="checkbox" id="filter-motel" name="motel" checked>
+            </p>
+            <p>
+              <label for="filter-apartments">Апартаменты</label>
+              <input type="checkbox" id="filter-apartments" name="apartments" checked>
+            </p>
+          </fieldset>
+          <fieldset class="filter-price">
+            <legend class="filter-title">Стоимость в сутки:</legend>
+            <p>
+              <input class="price-min" type="text" value="От 0">
+              <input class="price-max" type="text" value="До 3 000">
+            </p>
+            <p>
+              <input type="range" min="0" max="3000">
+            <p>
+              <input class="btn-show" type="submit" value="Показать">
+            </p>
+          </fieldset>
+        </form>
+      </section>
 
       <section class="hotels-sorting">
         <span class="hotels-found">Найдено:3</span>
         <h2>Сортировка:</h2>
         <ul class="sorting-type">
           <li>
-            <span>По цене</span>
+            <button class="type-price" type="button">По цене</button>
           </li>
           <li>
-            <span>По типу</span>
+            <button class="type-type" type="button">По типу</button>
           </li>
           <li>
-            <span>По рейтингу</span>
+            <button class="type-rating" type="button">По рейтингу</button>
           </li>
         </ul>
         <button class="button-up" type="button"><img src="img/icon-up.svg" width="11" height="10" alt="Кнопка «вверх»"></button>
