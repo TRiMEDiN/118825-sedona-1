@@ -1,7 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
-
+  margin: 0 auto;
+  padding: 0 6%;
+  width: 1200px;
   font-family: "PT Sans", Arial, sans-serif;
   color: #333333;
   text-transform: uppercase;
@@ -46,13 +46,15 @@ a {
 }
 
 .reasons-intro {
+  background-color: #ffffff;
+}
+
+.reasons-intro h2 {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-align: center;
-
-  background-color: #ffffff;
 }
 
 .reasons-intro p {
@@ -117,12 +119,14 @@ a {
 }
 
 .search-intro {
+  background-color: #ffffff;
+}
+
+.search-intro h2 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
-
-  background-color: #ffffff;
 }
 
 .search-intro p {
@@ -458,4 +462,151 @@ input[value="Найти"]:active {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
+}
+
+/* Сетка */
+
+/* index */
+
+.main-header {
+  position: relative;
+  width: 100%;
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 70px;
+}
+
+.site-navigation {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.site-navigation li {
+  width: 20%;
+  text-align: center;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 20%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.reasons-intro h2 {
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+.reasons-list {
+  padding-left: 0;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.reason-item-blue {
+  max-width: 400px;
+  min-height: 256px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.reason-img-right {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.reason-item-nested {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-intro {
+  text-align: center;
+}
+
+.search-intro p {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.search {
+  margin:0 auto;
+  text-align: center;
+
+}
+
+.hotels-search-button {
+  margin:0 auto;
+  min-width: 568px;
+  min-height: 86px;
+}
+
+.search-form  {
+  margin:0 auto;
+  max-width: 568px;
+  min-height: 395px;
+  vertical-align: middle;
+}
+
+.search-find-button {
+  min-width: 458px;
+  min-height: 58px;
+}
+
+.main-footer {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* catalog */
+
+.filter {
+  display: flex;
+  min-height: 217px;
+}
+
+fieldset {
+  border: none;
+}
+
+.filter-price {
+  justify-content:flex-end;
+}
+
+.hotels-sorting,
+.sorting-type {
+  display: flex;
+}
+
+.type-up,
+.type-down {
+  justify-content:flex-end;
+}
+
+.hotels-results {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-option {
+  flex-direction: row;
 }
